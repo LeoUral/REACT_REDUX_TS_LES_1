@@ -1,6 +1,4 @@
-# Getting Started with Create React App
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# REACT + REDUX + TS
 
 ## Available Scripts
 
@@ -14,13 +12,16 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 The page will reload if you make edits.\
 You will also see any lint errors in the console.
 
-## `install`
+## `install for project`
 
 #### `1 step:`
-npx create-react-app <MyNameFolder> --template typescript
+npx create-react-app <my-name-directory> --template typescript
 
 #### `2 step:`
 npm i @types/react-redux redux react-redux redux-thunk axios
+
+### `link to lesson:`
+https://www.youtube.com/watch?v=ETWABFYv0GM
 
 
 ## Learn More

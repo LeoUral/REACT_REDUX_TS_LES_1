@@ -16,10 +16,10 @@ You will also see any lint errors in the console.
 
 ## `install`
 
-# `1:`
+#### `1 step:`
 npx create-react-app <MyNameFolder> --template typescript
 
-# `2:`
+#### `2 step:`
 npm i @types/react-redux redux react-redux redux-thunk axios
 
 

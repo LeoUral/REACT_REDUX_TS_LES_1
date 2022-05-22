@@ -7,13 +7,13 @@ import { UserAction, UserActionTypes } from "../../types/user";
 export const fetchUsers = () => {
     return async (dispatch: Dispatch<UserAction>) => {
         try {
-            dispatch({ type: UserActionTypes.FETCH_USERS })
+            dispatch({ type: UserActionTypes.FETCH_USERS }) // * вызов инфо - ЗАГРУЗКА
 
             const response = await axios.get('https://jsonplaceholder.typicode.com/users')
 
             setTimeout(() => {
                 dispatch({
-                    type: UserActionTypes.FETCH_USERS_SUCCESS,
+                    type: UserActionTypes.FETCH_USERS_SUCCESS, // * загружаем в STORE данные
                     payload: response.data
                 })
             }, 1000)
@@ -22,7 +22,7 @@ export const fetchUsers = () => {
 
         } catch (err) {
             dispatch({
-                type: UserActionTypes.FETCH_USERS_ERROR,
+                type: UserActionTypes.FETCH_USERS_ERROR, // * обработка ошибок
                 payload: 'Произошла ошибка при загрузке пользователей'
             })
 

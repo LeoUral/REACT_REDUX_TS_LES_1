@@ -15,7 +15,7 @@ You will also see any lint errors in the console.
 ## `install for project`
 
 #### `1 step:`
-npx create-react-app <my-name-directory> --template typescript
+npx create-react-app my-name-directory --template typescript
 
 #### `2 step:`
 npm i @types/react-redux redux react-redux redux-thunk axios
